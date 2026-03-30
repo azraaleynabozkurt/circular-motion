@@ -1,45 +1,115 @@
-# Circular Motion Physics Project
+# Circular Motion: Theory, Simulation, and Visualization
 
-This repository contains Python simulations and visualizations of **circular motion, non-uniform circular motion, and frequency/periodic displacement**. Alongside the code, a detailed physics article is included in both Turkish and English, explaining the concepts and formulas.
+## Overview
 
-## 📄 Included Files
+This project presents a theoretical and computational study of circular motion, one of the fundamental topics in classical mechanics. It combines analytical formulations with Python-based simulations to better understand how physical quantities evolve over time.
 
-- `uniformm_circular_motion.py` – Simulation of uniform circular motion.
-- `non_uniform_circular_motion.py` – Simulation of non-uniform circular motion.
-- `frequency_and_period.py` – Simulation showing relationship between frequency and period.
-- `figures/` – Folder containing generated graphs from the simulations.
-- `articles/` – Folder containing the physics articles:
-  - `Dairesel_Hareket_Turkish.pdf` – Article in Turkish.
-  - `Circular_Motion_English.pdf` – Article in English.
+The project focuses on both **uniform** and **non-uniform circular motion**, supported by graphical visualizations.
 
-## 📊 Visualizations
+## Objectives
 
-Each Python script generates corresponding graphs:
+* To understand the physics of circular motion
+* To implement basic simulations using Python
+* To visualize motion and key relationships
+* To connect theoretical equations with graphical results
 
-- **uniform_circular_motion.py** → `figures/uniform_circular_motion.png`
-- **non_uniform_circular_motion.py** → `figures/non_uniform_circular_motion.png`
-- **frequency_and_period.py** → `figures/frequency_period.png`
+## Theoretical Background
 
-These graphs illustrate the motion, velocity, acceleration, and periodic behavior of circular motion concepts.
+### Uniform Circular Motion
 
-## 📘 Articles Overview
+In uniform circular motion, an object moves along a circular path with constant speed. However, its velocity direction continuously changes, resulting in centripetal acceleration.
 
-### Turkish Article: "Dairesel Hareket"
-Explains the physics of circular motion in detail, including:
-- Uniform and non-uniform circular motion
-- Angular velocity and linear velocity
-- Centripetal acceleration and force
-- Tangential acceleration in non-uniform motion
-- Frequency and period relationships
+Key equations:
 
-### English Article: "Circular Motion"
-Provides the same content in English for international readers and CV purposes.
+* v = 2πr / T
+* ω = 2π / T
+* v = ωr
+* a = v² / r
+* F = m v² / r
 
-## 💻 How to Run the Code
+### Non-Uniform Circular Motion
 
-1. Make sure Python 3.x is installed.
-2. Install required packages:
-```bash
-pip install matplotlib numpy
+In non-uniform circular motion, both the magnitude and direction of velocity change.
+
+Acceleration consists of two components:
+
+* **Centripetal acceleration** (toward the center)
+* **Tangential acceleration** (changes speed)
+
+The total acceleration is the vector sum of these components.
+
+## Computational Approach
+
+This project uses Python to simulate circular motion and visualize its behavior.
+
+### Tools
+
+* NumPy — numerical calculations
+* Matplotlib — visualization
+
+## Visualizations and Results
+
+### 1. Uniform Circular Motion
+
+![Uniform Circular Motion](results/Uniform_circular_motion.png)
+
+This visualization represents motion with constant angular velocity.
+Although the speed remains constant, the direction of velocity changes continuously, resulting in centripetal acceleration toward the center.
+
+### 2. Non-Uniform Circular Motion
+
+![Non-Uniform Circular Motion](results/Non_uniform_circular_motion.png)
+
+This graph represents motion where angular velocity changes over time.
+Both centripetal and tangential acceleration components are present, causing changes in both direction and magnitude of velocity.
+
+### 3. Frequency–Period Relationship
+
+![Frequency vs Period](results/frequency_period.png)
+
+This graph demonstrates the inverse relationship between frequency and period:
+
+T = 1 / f
+
+As frequency increases, the period decreases, confirming the theoretical relationship.
+
+## Key Insights
+
+* Circular motion always involves acceleration due to direction change
+* Uniform motion has constant speed but non-zero acceleration
+* Non-uniform motion includes both speed and direction changes
+* Graphical visualization helps better understand physical behavior
+
+## Applications
+
+* Orbital motion and astrophysics
+* Rotational systems in engineering
+* Vehicle dynamics
+* Physical simulations
+
+## Project Structure
+
+```
+CircularMotion/
+│── README.md
+│── scripts/
+│── results/
+│── articles/
+```
+
+## Future Improvements
+
+* Extending simulations using differential equations
+* Adding more detailed physical models
+* Creating animated visualizations
+* Expanding to 3D motion
 
 
+## Author
+
+Azra Aleyna Bozkurt
+Physics Applicant — Computational Physics Focus
+
+## Conclusion
+
+This project reflects a combined approach to learning physics through theory and computation. By integrating analytical understanding with numerical visualization, it aims to provide a clearer and more intuitive understanding of circular motion.
