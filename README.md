@@ -87,6 +87,19 @@ As frequency increases, the period decreases, confirming the theoretical relatio
 * Vehicle dynamics
 * Physical simulations
 
+## Articles
+
+This project is supported by detailed written explanations available in both English and Turkish.
+
+* English version: `articles/Circular Motion.eng.pdf`
+* Turkish version: `articles/Circular Motiong.tr.pdf`
+
+These articles provide a more detailed explanation of circular motion, including theoretical background and real-world examples.
+
+The bilingual format reflects my ability to study and communicate physics concepts across different languages.
+
+Some parts of this work were also summarized in Chinese to support my ability to engage with physics in a Chinese-medium academic environment.
+
 ## Project Structure
 
 ```
